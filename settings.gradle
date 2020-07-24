@@ -1,0 +1,5 @@
+rootProject.name = 'ActiveMQ'
+include ':sharingan', ':judger'
+
+project(':sharingan').projectDir = "$rootDir/sharingan-fake" as File
+project(':judger').projectDir = "$rootDir/judger-fake" as File
