@@ -16,7 +16,7 @@ public class Publisher {
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
 
-    @RequestMapping(value = "/sendToSharigan", method = RequestMethod.GET)
+    @RequestMapping(value = "/sendToSharingan", method = RequestMethod.GET)
     public void sendMail() {
         Map<String, Object> mapMessage = new HashMap<>();
         for(int i = 0; i < 10; i++){
